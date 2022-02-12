@@ -4,49 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 
     <title>Document</title>
 </head>
 <body>
+
     <canvas id="gPorcentaje" width="400" height="400"> </canvas>
     
     <script>
         
           
     </script>
-    <script>
-
-        
-        var ctx = document.getElementById("gPorcentaje").getContext("2d");
-        var myChart = new Chart(ctx,{
-            type:"bar",
-            data:{
-                labels:['A(>90%)','B(70% - 89%)','C(45% - 65%)','D(<45%)'],
-                datasets:[{
-                    label:'Grafica de Promedios',
-                    data:[10,8,15,12],
-                    backgroundColor:[
-                        'rgb(255,0,0)',
-                        '#ffc100',
-                        '#094971',
-                        '#10b23a',
-                        ' #20778c ',
-                        ' #405768 '
-                    ]
-                }]
-            },
-            options:{
-                scales:{
-                    yAxes:[{
-                        ticks:{
-                            beginAtZaero:true
-                        }
-                    }]
-                }
-            }
-        })
-    </script>
+   
 </body>
+<script src="js/view.js"></script>
 </html>
