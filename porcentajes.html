@@ -13,13 +13,19 @@
     <canvas id="gPorcentaje" width="400" height="400"> </canvas>
     
     <script>
+        
+          
+    </script>
+    <script>
+
+        
         var ctx = document.getElementById("gPorcentaje").getContext("2d");
         var myChart = new Chart(ctx,{
             type:"bar",
             data:{
-                labels:['A','B','C','D'],
+                labels:['A(>90%)','B(70% - 89%)','C(45% - 65%)','D(<45%)'],
                 datasets:[{
-                    label:'Excelente',
+                    label:'Grafica de Promedios',
                     data:[10,8,15,12],
                     backgroundColor:[
                         'rgb(255,0,0)',
